@@ -26,22 +26,33 @@
     "groups": [
       {
         "group": "Getting Started",
-        "pages": ["index", "quickstart"]
+        "pages": ["index", "quickstart", "core-concepts"]
       },
       {
         "group": "Connections",
-        "pages": ["connections/crm", "connections/ads"]
+        "pages": ["connections/crm", "connections/ads", "connections/health"]
+      },
+      {
+        "group": "Lead Handling",
+        "pages": ["leads/overview", "leads/follow-up", "leads/booking", "leads/compliance"]
+      },
+      {
+        "group": "Advertising",
+        "pages": ["ads/campaigns", "ads/creative", "ads/budgets", "ads/reporting"]
       },
       {
         "group": "Using Ares",
-        "pages": ["using/dashboard", "using/chat", "using/approvals", "using/leads"]
+        "pages": ["using/dashboard", "using/chat", "using/approvals"]
       },
       {
         "group": "Account",
-        "pages": ["account/billing", "account/faq", "account/troubleshooting"]
+        "pages": ["account/billing", "account/security", "account/faq", "account/troubleshooting"]
       }
     ]
   },
+  "redirects": [
+    { "source": "/using/leads", "destination": "/leads/overview" }
+  ],
   "navbar": {
     "links": [
       {

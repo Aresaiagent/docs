@@ -3,32 +3,50 @@ title: "CRM connection"
 description: "Connect your HighLevel account so Ares can work your contacts, conversations, and pipeline."
 ---
 
-Ares uses your CRM as its home base for lead handling. Connecting it is the single most important setup step.
+Ares uses your CRM as its home base for lead handling. Every lead, message, tag, and appointment lives there, in your account, under your control. Connecting it is the single most important setup step.
 
 ## What Ares can do once connected
 
-- Read and update contacts, tags, and custom fields
-- Read conversations across SMS and email
-- Send follow-up messages to leads, subject to your [approval settings](/using/approvals)
-- Move opportunities through your pipeline as leads progress
-- Check calendars and work toward booked appointments
+| Area | Capability |
+| --- | --- |
+| Contacts | Create and update contacts, tags, and custom fields |
+| Conversations | Read SMS and email threads; send follow-up subject to your [approval settings](/using/approvals) |
+| Pipeline | Create and move opportunities through your stages as leads progress |
+| Calendars | Read availability and work toward booked appointments |
+| Forms and webhooks | Receive new lead submissions the moment they arrive |
 
-## What Ares will not do
+## What Ares will never do
 
-- It never deletes contacts. Ever.
-- It never messages outside the guardrails you set.
-- It never touches billing or account settings inside your CRM.
+- **Delete contacts.** Under no circumstances, including "cleanup." Cold leads get tagged and parked instead.
+- **Message outside the guardrails you set.** Standing follow-up runs as authorized; anything beyond it goes through approvals.
+- **Touch billing, account settings, or user management** inside your CRM.
 
 ## Connecting
 
 1. Open [app.aresdeploy.com](https://app.aresdeploy.com) and go to the connections step of onboarding, or the connections panel on the dashboard.
-2. Choose your CRM and authorize access to the account you use for your business.
-3. Ares confirms the connection and reads in your pipelines and calendars.
+2. Choose your CRM and sign in to the account you use for your business.
+3. Ares confirms the connection, then reads in your pipelines, calendars, and existing contacts so it starts with full context.
+
+The first sync can take a few minutes on large accounts. Ares tells you when it is caught up.
+
+## Pipeline setup that works
+
+Ares adapts to your existing pipeline, but simple pipelines produce better automation and cleaner reporting:
 
 <Note>
-Keep your pipeline simple. Ares works best with a handful of clear stages that start at the booking, not a dozen micro-stages. Fewer stages means cleaner reporting and fewer misfiled leads.
+Start your pipeline at the booking, not before it. A stage set like **New lead → Contacted → Estimate booked → Quoted → Won** beats a dozen micro-stages. Fewer stages means fewer misfiled leads and numbers you can read.
 </Note>
+
+If your pipeline is a mess right now, connect anyway. Ask Ares in chat to propose a simplified stage set; it will map existing opportunities across for your approval.
+
+## Working alongside Ares
+
+You and your team keep using the CRM normally. Ares sees manual changes and works around them:
+
+- If you reply to a lead yourself, Ares reads it and does not double-send.
+- If you drag an opportunity to a new stage, Ares treats that as ground truth.
+- If you tag a contact "do not contact," Ares honors it immediately.
 
 ## Disconnecting
 
-You can revoke access at any time from the connections panel. Ares stops all CRM activity immediately and your data stays in your CRM, untouched.
+Revoke access any time from the connections panel. Ares stops all CRM activity immediately. Your data stays in your CRM, untouched, because it never lived anywhere else.

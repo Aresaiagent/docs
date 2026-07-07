@@ -1,0 +1,45 @@
+---
+title: "Connection health"
+description: "How Ares monitors its connections, what happens when one breaks, and how to fix it."
+---
+
+Connections are credentials, and credentials expire, get revoked upstream, or break when a password changes. Ares assumes this will happen and is built to fail loudly instead of silently.
+
+## How you find out
+
+- The **dashboard** shows each connection with a health indicator. A broken connection is surfaced as an attention item, not buried in a settings page.
+- **Ares tells you in chat** when a connection drops and what it was in the middle of doing.
+
+## What happens while a connection is down
+
+- Ares stops attempting actions through the broken connection immediately. No retry storms, no half-finished writes.
+- Inbound work queues. When the connection is restored, Ares catches up on what it missed, in order.
+- Everything else keeps running. A broken ads connection does not stop CRM follow-up, and vice versa.
+
+<Note>
+Leads that arrive while your CRM connection is down are not lost. They queue and are processed on reconnect. Speed matters though: a lead followed up hours late converts worse than one answered in seconds, so treat a broken connection as same-day urgent.
+</Note>
+
+## Fixing a broken connection
+
+<Steps>
+  <Step title="Open the connections panel">
+    From the dashboard, open connections and find the one flagged unhealthy.
+  </Step>
+  <Step title="Reconnect with the same account">
+    Sign in with the same account you used originally. Using a different account can point Ares at the wrong CRM location or ad account.
+  </Step>
+  <Step title="Confirm recovery">
+    Ares verifies the connection with a live check and reports back. Ask in chat: "is everything healthy now?" and you will get a straight answer including anything it caught up on.
+  </Step>
+</Steps>
+
+## Common causes
+
+| Symptom | Likely cause | Fix |
+| --- | --- | --- |
+| CRM connection drops after password change | Session invalidated upstream | Reconnect from the connections panel |
+| Ads connection healthy but launches fail | Connected profile lacks permission on the ad account | Reconnect with the account that owns the ad account |
+| Leads from a website form stop arriving | Form or webhook was edited and points nowhere | Submit a test lead, then ask Ares where it stalled |
+
+When in doubt, ask Ares directly. It can usually tell you exactly which call failed and why.

@@ -1,30 +1,60 @@
 ---
 title: "Approvals"
-description: "Sensitive actions wait for your sign-off. Here is what gets gated and how the queue works."
+description: "Sensitive actions wait for your sign-off. What gets gated, what runs free, and how the queue works."
 ---
 
-Ares is built on a simple rule: routine work runs on its own, and anything customer-visible or money-related waits for you.
+Ares runs on a simple contract: routine work runs on its own, and anything customer-visible or money-related waits for you. The approval queue is where that contract is enforced, and it is designed to cost you seconds per day, not add a second job.
 
 ## What requires approval
 
-- Outbound messages beyond your standing follow-up rules
-- Launching or materially changing ad campaigns, including any new spend
-- New ad copy and creative, which you always see before it runs
-- Anything Ares itself judges as risky or unusual for your account
+| Category | Examples |
+| --- | --- |
+| New spend | Campaign launches, budget increases, scaling a winner |
+| Creative | New ad copy or imagery, changes to a running ad |
+| Out-of-pattern messaging | A blast to a list, re-engaging old leads, anything beyond standing follow-up |
+| Judgment calls | Anything Ares itself flags as unusual or risky for your account |
 
 ## What runs without approval
 
 - Reading and organizing CRM data
-- Routine lead follow-up you have already authorized
-- Reporting, monitoring, and analysis
-- Pausing something that is clearly burning money
+- Standing lead follow-up you have already authorized
+- Monitoring, reporting, and analysis
+- Pausing something that is clearly wasting money
+
+The asymmetry is intentional: actions that stop problems run free, actions that create exposure wait for you.
 
 ## Working the queue
 
-Pending approvals appear on your dashboard. Each one shows what Ares wants to do, why, and exactly what will go out. You approve or reject with one tap, and you can reply in chat to ask for changes first: "shorten this message" or "lower that budget to $40 a day."
+Pending approvals live on the [dashboard](/using/dashboard). Each one shows:
 
-Approvals do not expire silently. If something sits unanswered, Ares reminds you rather than acting on its own.
+- **What** Ares wants to do, in full: the exact message, the exact ad, the exact budget
+- **Why**, in a sentence: the reasoning, not just the request
+- **The blast radius**: who it reaches or what it spends
 
-<Note>
-Approval settings are guardrails, not busywork. Most owners clear the queue in under a minute a day, and everything customer-facing stays under your control.
-</Note>
+You have three moves:
+
+1. **Approve.** One tap. The action executes and shows in activity.
+2. **Decline with a note.** "Too pushy, soften it" or "wrong photo" sends it back for revision. The revised version returns to the queue.
+3. **Ask questions first.** Jump to chat and interrogate: "what happens if we do not do this?" The approval waits while you decide.
+
+Approvals do not expire silently. If something sits unanswered, Ares reminds you rather than acting anyway or quietly dropping it.
+
+## Widening standing authorization
+
+Approving the same kind of action repeatedly is a signal. You can convert a pattern into standing authorization in chat:
+
+> "You do not need to ask before pausing underperforming ads."
+> "Re-engagement messages to leads under 90 days old are pre-approved if they follow the usual templates."
+
+Standing authorizations are visible, revocable, and narrow by default. "Never ask me about anything again" is not an available setting, by design: spend and new creative always come to you.
+
+## Narrowing it
+
+The other direction always works too, and instantly:
+
+> "Ask me before sending anything to commercial leads."
+> "All messaging goes through approval this week, we have a sensitive job in progress."
+
+## The point
+
+The queue exists so you can delegate execution without delegating judgment. You stay the owner: every dollar and every customer-facing word is either something you approved directly or something you explicitly pre-authorized in a scope you can revoke.

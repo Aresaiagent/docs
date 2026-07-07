@@ -1,0 +1,60 @@
+---
+title: "Core concepts"
+description: "The operator model: how Ares thinks about autonomy, approvals, and your accounts."
+---
+
+Five ideas explain how Ares works. Everything else in these docs is detail on top of them.
+
+## 1. Ares is an operator, not an automation
+
+Traditional marketing software makes you build the machine: workflows, triggers, if-this-then-that branches. When something changes, you rebuild the machine.
+
+Ares inverts that. You state the outcome you want, in plain English, and the operator figures out the steps. "We are booked out three weeks, slow things down" is a complete instruction. So is "push hard on patio covers this month." The operator adjusts follow-up, pacing, and campaign behavior to match, and tells you what it changed.
+
+## 2. Connections are the operator's hands
+
+Ares acts through two connections you grant during onboarding:
+
+| Connection | What it gives Ares |
+| --- | --- |
+| **CRM (HighLevel)** | Read and write contacts, conversations, pipelines, tags, custom fields, and calendars |
+| **Meta ads** | Launch and manage lead campaigns, read performance data, and receive new ad leads |
+
+Ares has no access outside what you connect. Credentials are held in a managed connector layer, never in prompts or logs, and you can revoke either connection at any time from the dashboard. See [Security and data](/account/security).
+
+## 3. The autonomy line: routine runs, sensitive waits
+
+Every action Ares can take falls on one side of a line:
+
+**Runs automatically**
+- Reading and organizing CRM data
+- Routine lead follow-up you have already authorized
+- Monitoring, reporting, and analysis
+- Pausing something that is clearly wasting money
+
+**Waits for your approval**
+- Outbound messages beyond your standing follow-up rules
+- Launching or materially changing ad campaigns, including any new spend
+- New ad copy and creative
+- Anything Ares itself judges unusual or risky for your account
+
+The line is deliberately conservative by default. As you approve more of the same kind of work, you can tell Ares to widen its standing authorization; you can also narrow it at any time. The full mechanics are in [Approvals](/using/approvals).
+
+## 4. Every conversation drives toward a booking
+
+Ares does not measure itself on replies or "engagement." The objective of lead handling is a booked estimate on your calendar. That single goal shapes its behavior:
+
+- Pricing questions get steered to the estimate rather than answered over text
+- Follow-up persists for weeks, because most bookings come from later touches
+- Dead conversations get parked and tagged, never deleted
+
+See [Lead handling](/leads/overview) for the full lifecycle.
+
+## 5. You can always see why
+
+Every action Ares takes is attributable: what it did, when, on whose behalf, and why. The dashboard surfaces the summary; chat lets you interrogate any specific case ("why has nobody texted the lead from Tuesday?") and get a concrete answer, not a shrug. If something looks wrong, ask. If something was wrong, tell it, and the correction sticks.
+
+## Where to go next
+
+- Connect your accounts: [CRM](/connections/crm), [Ads](/connections/ads)
+- Understand the day-to-day: [Dashboard](/using/dashboard), [Chat](/using/chat), [Approvals](/using/approvals)

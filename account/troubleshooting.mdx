@@ -1,33 +1,52 @@
 ---
 title: "Troubleshooting"
-description: "Fixes for the most common issues."
+description: "Diagnosis and fixes for the most common issues, in the order to try them."
 ---
+
+The universal first step: ask Ares in chat. It can see its own records, its connections, and every lead's history, so "why did X happen?" usually returns the actual answer immediately. This page covers the patterns worth knowing anyway.
 
 ## A connection shows as disconnected
 
-Authorizations expire or get revoked upstream from time to time.
+Authorizations expire, passwords change, and platforms revoke sessions. This is routine.
 
-1. Open the connections panel on your dashboard.
-2. Choose the affected connection and reconnect with the same account you used originally.
-3. Ares resumes automatically once the connection is healthy. Nothing is lost while disconnected; work queues up and catches up.
+1. Open the connections panel on the dashboard.
+2. Reconnect using the same account you connected originally.
+3. Ares verifies with a live check and catches up on anything queued while it was down.
+
+Full detail, including what happens to leads during an outage, is in [Connection health](/connections/health).
 
 ## Leads are not showing up
 
-- Check that your CRM connection is healthy on the dashboard.
-- If the missing leads come from a website form, submit a test lead yourself and ask Ares in chat whether it arrived.
-- If the missing leads come from ads, ask Ares to check the campaign's lead form.
+Work the funnel from the top:
 
-Ares can usually tell you exactly where a specific lead stalled: ask it by name.
+<Steps>
+  <Step title="Check the connection">
+    Dashboard, connections panel. A broken CRM connection is the most common cause and the fastest fix.
+  </Step>
+  <Step title="Test the capture point">
+    If the missing leads come from a website form, submit a test lead yourself, then ask Ares in chat whether it arrived. A form pointed at a dead webhook returns success to the visitor and delivers nothing; the test exposes it in one minute.
+  </Step>
+  <Step title="Check the ads side">
+    If the missing leads come from ads, ask Ares to verify the campaign's lead form is connected and delivering. It can check submissions on the platform side against arrivals in the CRM and tell you exactly where the gap is.
+  </Step>
+</Steps>
 
 ## Messages are not sending
 
-- Confirm the lead has not opted out; opt-outs are honored permanently.
-- New texting numbers go through carrier registration, which can take a few business days after setup. Ares will tell you if your number is still pending.
+- **Opt-out:** if the lead previously opted out, no message will ever send. This is permanent and by design. See [Compliance](/leads/compliance).
+- **Number registration:** new texting numbers go through carrier registration, which takes a few business days. Delivery is limited until it clears; Ares will tell you if your number is still pending.
+- **Quiet hours:** messages queued outside the allowed window send when it opens, not immediately.
 
 ## A campaign looks wrong
 
-Ask Ares in chat first: "why is cost per lead up this week?" It will pull the numbers and explain. If something needs changing, it will propose the change through your approval queue.
+Ask before touching: "why is cost per lead up this week?" gets the actual diagnosis, and if a change is warranted it arrives in your approval queue as a concrete proposal. Panic-pausing a campaign that was mid-learning usually costs more than the drift did. If you want everything stopped regardless, "pause everything" in chat works instantly.
 
 ## Sign-in problems
 
-Use the email address from your original checkout. If you signed up with Google, keep using Google sign-in. Still stuck? Book a call at [calendly.com/contact-aresdeploy/ares-demo](https://calendly.com/contact-aresdeploy/ares-demo) and we will fix it live.
+- Use the email address from your original checkout.
+- If you signed up with Google, keep using Google sign-in; if with a login link, request a fresh one.
+- Still stuck? Book a call at [calendly.com/contact-aresdeploy/ares-demo](https://calendly.com/contact-aresdeploy/ares-demo) and we will fix it live.
+
+## Something looks genuinely wrong
+
+Unexpected message to a lead, activity you cannot place, a number that cannot be right: say so in chat, plainly. It triggers a real check against the underlying records, and you get either an explanation with receipts or a correction with an account of what changed. See [Security and data](/account/security).
