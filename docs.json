@@ -38,7 +38,13 @@
       },
       {
         "group": "Advertising",
-        "pages": ["ads/campaigns", "ads/creative", "ads/budgets", "ads/reporting"]
+        "pages": [
+          "ads/campaigns",
+          "ads/creative",
+          "ads/budgets",
+          "ads/reporting",
+          "ads/multi-location-franchise-marketing"
+        ]
       },
       {
         "group": "Using Ares",
