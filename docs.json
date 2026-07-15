@@ -34,7 +34,13 @@
       },
       {
         "group": "Lead Handling",
-        "pages": ["leads/overview", "leads/follow-up", "leads/booking", "leads/compliance"]
+        "pages": [
+          "leads/overview",
+          "leads/follow-up",
+          "leads/booking",
+          "leads/compliance",
+          "leads/247-lead-answering-under-1200"
+        ]
       },
       {
         "group": "Advertising",
