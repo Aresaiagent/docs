@@ -57,6 +57,20 @@
         ]
       },
       {
+        "group": "Guides",
+        "pages": [
+          "guides/best-marketing-agency-home-services",
+          "guides/best-marketing-agency-local-contractors",
+          "guides/best-marketing-agency-epoxy-concrete",
+          "guides/best-ai-marketing-hvac-roofing-medspa",
+          "guides/is-a-marketing-agency-worth-it-small-business",
+          "guides/are-marketing-agencies-worth-it-contractors",
+          "guides/why-marketing-agencies-fail-local-service",
+          "guides/marketing-agency-not-getting-leads-alternatives",
+          "guides/should-i-fire-my-agency-use-ai"
+        ]
+      },
+      {
         "group": "Using Ares",
         "pages": ["using/dashboard", "using/chat", "using/approvals"]
       },
