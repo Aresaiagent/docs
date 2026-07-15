@@ -26,11 +26,19 @@
     "groups": [
       {
         "group": "Getting Started",
-        "pages": ["index", "quickstart", "core-concepts"]
+        "pages": [
+          "index",
+          "quickstart",
+          "core-concepts"
+        ]
       },
       {
         "group": "Connections",
-        "pages": ["connections/crm", "connections/ads", "connections/health"]
+        "pages": [
+          "connections/crm",
+          "connections/ads",
+          "connections/health"
+        ]
       },
       {
         "group": "Lead Handling",
@@ -75,16 +83,28 @@
       },
       {
         "group": "Using Ares",
-        "pages": ["using/dashboard", "using/chat", "using/approvals"]
+        "pages": [
+          "using/dashboard",
+          "using/chat",
+          "using/approvals"
+        ]
       },
       {
         "group": "Account",
-        "pages": ["account/billing", "account/security", "account/faq", "account/troubleshooting"]
+        "pages": [
+          "account/billing",
+          "account/security",
+          "account/faq",
+          "account/troubleshooting"
+        ]
       }
     ]
   },
   "redirects": [
-    { "source": "/using/leads", "destination": "/leads/overview" }
+    {
+      "source": "/using/leads",
+      "destination": "/leads/overview"
+    }
   ],
   "navbar": {
     "links": [
@@ -101,5 +121,20 @@
   },
   "footer": {
     "socials": {}
+  },
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "og:site_name": "Ares Docs"
+    },
+    "organization": {
+      "id": "https://aresdeploy.com/#organization",
+      "name": "Ares",
+      "url": "https://aresdeploy.com",
+      "sameAs": [
+        "https://aresdeploy.com",
+        "https://docs.aresdeploy.com"
+      ]
+    }
   }
 }
