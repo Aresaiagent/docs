@@ -1,0 +1,93 @@
+---
+title: "How to Cancel a Marketing Agency Contract Without Losing Your Ad Accounts"
+sidebarTitle: "Cancel Agency, Keep Ad Accounts"
+description: "How to end a marketing agency contract while keeping ownership and admin access to your Meta and Google ad accounts intact."
+---
+
+<Note>
+**Key takeaway:** You keep your ad accounts by confirming you (not the agency) hold the top-level admin role in Meta Business Manager and Google Ads before you cancel, then revoking their access after the switch, not before.
+</Note>
+
+Losing an ad account rarely happens because a contract ends. It happens because the agency, not the business owner, was the actual owner of the Business Manager or Google Ads Manager Account the whole time. Fix the ownership question first, cancel second, revoke access last.
+
+## What does "losing your ad accounts" actually mean?
+
+Outright deletion out of spite is rare. The more common failure is quieter: the agency set up your ad accounts under their own Meta Business Manager or Google Ads Manager Account (MCC), and when the contract ends, so does your access to the campaign history, pixel data, and saved audiences. You didn't lose the account. You never owned it.
+
+## Who owns your Meta and Google ad accounts right now?
+
+Ad account ownership is defined as whichever Business Manager or Manager Account sits at the top of the admin hierarchy for that asset. In Meta's system, a Business Manager can hold "admin" access to an ad account it doesn't own outright, which looks identical to ownership in the day-to-day interface. Google Ads works the same way through its Manager Account (MCC) structure: an agency's MCC can be linked to your account with full admin rights, and that link can be removed by whoever controls the parent MCC.
+
+Client-owned access means your business email created the Business Manager or Google Ads account, with the agency added underneath it. Agency-owned access means the reverse: their Business Manager or MCC is the parent, and you're a guest in it. Only one of those setups lets you walk away clean.
+
+## What should you check before you send a cancellation notice?
+
+Do this before you say a word to the agency. Once they know you're leaving, a bad-faith agency has more incentive to slow-walk access than to hand it over.
+
+- Log into business.facebook.com yourself and check whether your ad account sits under a Business Manager you control, and who has admin access.
+- Log into ads.google.com and check the "Manager Accounts" tab to see which MCC is linked and whether you have your own standalone login.
+- Note every pixel, conversions API connection, and saved audience tied to the account; these often live at the Business Manager level and are easy to overlook.
+- Check your contract for a data and asset ownership clause. Many agency agreements are silent on this, which usually favors whoever built the account.
+
+## How do you actually cancel the contract without a fight?
+
+Read the termination clause first. Most agency retainers require 30 to 60 days written notice, and some auto-renew if you miss that window by even a few days. Send cancellation in writing, referencing the specific clause, and ask for written confirmation of the effective end date.
+
+In the same message, separately request "transfer of admin access to all ad accounts and Business Manager assets to [your email], completed before the contract end date." Treat that as its own deliverable, not something that happens automatically when the retainer ends; agencies that stall usually do it in the gap between "you're cancelled" and "here's your login."
+
+Do not revoke the agency's access until you've confirmed, from your own login, that you have full admin control and campaigns are still running. Cutting them off early, before you've verified access, is how businesses end up locked out of their own accounts with nobody left to call.
+
+## Agency vs AI operator vs DIY: what happens to your ad accounts in each?
+
+| | Traditional agency | AI operator (Ares) | DIY with ChatGPT |
+|---|---|---|---|
+| Who typically owns the Business Manager / MCC | Often the agency, unless specified otherwise in the contract | You; Ares operates within your own accounts | You, by default |
+| What happens on cancellation | Access transfer is a manual, sometimes contested handoff | Nothing to transfer, since you already own the accounts | Nothing changes, you were never dependent on anyone |
+| Typical transition time | Days to weeks, if the agency cooperates | Same day, since ownership never moved | Immediate |
+| Ongoing monthly cost | Often \$2,000 to \$5,000+ | \$299 (\$100/seat for enterprise) | Your time |
+| Who manages day-to-day bidding and creative | Agency staff, on your accounts or theirs | Ares, on your accounts, with your approval before spend | You |
+
+## Signs your agency is stalling on the handoff
+
+- They stop responding to written requests for admin access within a few business days of your cancellation notice.
+- They ask you to "just keep the ads running through us" past the contract end date without a signed extension.
+- They can't produce a straight answer to "whose Business Manager is this account under."
+- Your login suddenly can't see historical performance data that was visible a week earlier.
+- They mention a "transition fee" for handing over access that wasn't in the original contract.
+
+One of these is a yellow flag, and it overlaps with the pattern covered in [should I fire my agency](/guides/should-i-fire-my-agency-use-ai): an agency stalling on a handoff is often the same one that was coasting on execution the whole contract. Two or more signs, and it's worth involving Meta's or Google's own dispute processes for business asset ownership.
+
+## A hypothetical example: a landscaping company switching providers
+
+This is an illustrative walkthrough, not a claimed Ares client outcome. Say a landscaping company signed with an agency two years ago, and the agency's staff created the Meta Business Manager, adding the owner as an admin under it. The owner cancels with 30 days notice and, in the same email, asks for the Business Manager itself, not just admin access, transferred to an address they control. The agency drags its feet for three weeks; the owner escalates through Meta Business Help Center's ownership dispute process, citing payment records as proof the business funded the account. Ownership transfers in the final week of the notice period, before the leverage of "you're still under contract" disappears.
+
+## How Ares fits into a clean cancellation
+
+Ares is built to sit inside accounts you already own, not to become another party you'd need to extract yourself from later. When a business switches to Ares, it connects to the owner's own Meta Business Manager and Google Ads account through its [ads connector](/ads/campaigns), runs campaigns there with owner approval required before any spend, and manages lead response, booking, and follow-up through GoHighLevel as the CRM layer. Nothing about that requires transferring account ownership to Ares, which is the opposite of the risk this guide is about; see [marketing agency vs AI marketing tool](/guides/marketing-agency-vs-ai-marketing-tool) for how that division of labor plays out day to day.
+
+That matters most right after a cancellation, when leads still need answering regardless of who's managing the ads. A Harvard Business Review study from 2011 found that companies contacting a lead within an hour were roughly seven times more likely to have a meaningful conversation with that lead than companies that waited even a little longer, and a messy agency transition is exactly when response times slip. Ares keeps answering leads by SMS, email, and chat through the handoff, on accounts the business already controls. Pricing, [billed month to month](/account/billing), is \$299 a month standard, or \$100 per seat for enterprise, with no setup fee.
+
+On the roadmap: call tracking, Google Local Services Ads management, and deeper field-service CRM integrations are planned but not live yet.
+
+## Frequently asked questions
+
+<AccordionGroup>
+<Accordion title="Can a marketing agency legally keep my ad account after I cancel?">
+It depends on who owns the Business Manager or Google Ads Manager Account. If the agency built it under their own business assets, they may have a legitimate claim unless your contract says otherwise. Check ownership before you cancel, not after.
+</Accordion>
+<Accordion title="How do I check if I own my Facebook or Meta ad account?">
+Log into business.facebook.com and look at the Business Manager tied to the ad account. If your business created it, you likely own it; if the agency's Business Manager is the parent, they do.
+</Accordion>
+<Accordion title="What should I put in a marketing agency cancellation letter?">
+Reference the specific termination clause and notice period from your contract, state the effective cancellation date, and separately request full admin access transfer for all ad accounts and Business Manager assets before that date.
+</Accordion>
+<Accordion title="Should I cancel the contract first or ask for account access first?">
+Neither in isolation. Send both in the same written notice, but don't revoke the agency's access until you've personally confirmed, from your own login, that you have full admin control and campaigns are still active.
+</Accordion>
+<Accordion title="What if the agency won't transfer my Google Ads or Meta account?">
+Escalate through Meta Business Help Center or Google Ads support, both of which have dispute processes for business asset ownership. Payment records showing your business funded the ad spend are useful evidence.
+</Accordion>
+<Accordion title="Does switching to an AI operator like Ares mean giving up my ad accounts?">
+No. Ares connects to Meta and Google Ads accounts you already own through an ads connector rather than requiring you to create new accounts under its own business assets, so there's nothing to transfer or lose later.
+</Accordion>
+</AccordionGroup>
