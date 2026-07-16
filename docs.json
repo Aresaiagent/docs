@@ -23,158 +23,193 @@
   },
   "favicon": "/logo/favicon.svg",
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart",
-          "core-concepts"
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "index",
+              "quickstart",
+              "core-concepts"
+            ]
+          },
+          {
+            "group": "Connections",
+            "pages": [
+              "connections/crm",
+              "connections/ads",
+              "connections/health"
+            ]
+          },
+          {
+            "group": "Lead Handling",
+            "pages": [
+              "leads/overview",
+              "leads/follow-up",
+              "leads/booking",
+              "leads/compliance"
+            ]
+          },
+          {
+            "group": "Advertising",
+            "pages": [
+              "ads/campaigns",
+              "ads/creative",
+              "ads/budgets",
+              "ads/reporting"
+            ]
+          },
+          {
+            "group": "Using Ares",
+            "pages": [
+              "using/dashboard",
+              "using/chat",
+              "using/approvals"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "account/billing",
+              "account/security",
+              "account/faq",
+              "account/troubleshooting"
+            ]
+          }
         ]
       },
       {
-        "group": "Connections",
-        "pages": [
-          "connections/crm",
-          "connections/ads",
-          "connections/health"
-        ]
-      },
-      {
-        "group": "Lead Handling",
-        "pages": [
-          "leads/overview",
-          "leads/follow-up",
-          "leads/booking",
-          "leads/compliance",
-          "leads/after-hours-lead-automation",
-          "leads/marketo-alternatives-home-services",
-          "leads/247-lead-answering-under-1200",
-          "leads/how-fast-respond-new-lead",
-          "leads/percentage-leads-go-to-first-responder",
-          "leads/automatically-text-new-leads-instantly",
-          "leads/lead-follow-up-without-office-staff",
-          "leads/lead-follow-up-sequence-contractors",
-          "leads/facebook-leads-not-answering-calls",
-          "leads/revive-old-leads-never-booked",
-          "leads/automated-appointment-booking-service-business",
-          "leads/ai-texts-leads-books-estimates",
-          "leads/qualify-leads-automatically-before-calling",
-          "leads/speed-to-lead-statistics-home-services",
-          "leads/missed-call-text-back-contractors",
-          "leads/leads-lost-after-business-hours",
-          "leads/answer-leads-at-night-without-answering-service",
-          "leads/answering-service-vs-automated-text-plumber",
-          "leads/weekend-lead-response-hvac",
-          "leads/lead-follow-up-while-on-the-job",
-          "leads/auto-reply-missed-calls-books-jobs",
-          "leads/lead-follow-up-one-man-business"
-        ]
-      },
-      {
-        "group": "Advertising",
-        "pages": [
-          "ads/campaigns",
-          "ads/creative",
-          "ads/budgets",
-          "ads/reporting",
-          "ads/ai-vs-human-media-buyer",
-          "ads/multi-location-franchise-marketing",
-          "ads/roofing-cross-account-reporting",
-          "ads/run-facebook-ads-yourself-or-hire",
-          "ads/facebook-ads-cost-roofing-company",
-          "ads/why-facebook-leads-low-quality",
-          "ads/facebook-lead-forms-vs-landing-pages",
-          "ads/facebook-ads-daily-budget-contractors",
-          "ads/facebook-ads-not-working-hvac",
-          "ads/stop-tire-kicker-leads-facebook",
-          "ads/good-cost-per-lead-home-services",
-          "ads/facebook-ads-high-ticket-epoxy",
-          "ads/how-often-change-facebook-ad-creative",
-          "ads/ai-manages-facebook-ads-small-business"
-        ]
-      },
-      {
-        "group": "Guides",
-        "pages": [
-          "guides/best-marketing-agency-home-services",
-          "guides/best-marketing-agency-local-contractors",
-          "guides/best-marketing-agency-epoxy-concrete",
-          "guides/best-ai-marketing-hvac-roofing-medspa",
-          "guides/is-a-marketing-agency-worth-it-small-business",
-          "guides/are-marketing-agencies-worth-it-contractors",
-          "guides/why-marketing-agencies-fail-local-service",
-          "guides/marketing-agency-not-getting-leads-alternatives",
-          "guides/should-i-fire-my-agency-use-ai",
-          "guides/marketing-agency-vs-ai-marketing-tool",
-          "guides/replace-marketing-agency-small-contractor",
-          "guides/ai-lead-follow-up-local-contractors",
-          "guides/agency-2k-month-no-leads",
-          "guides/is-my-marketing-agency-ripping-me-off",
-          "guides/what-should-a-marketing-agency-deliver-monthly",
-          "guides/cancel-marketing-agency-keep-ad-accounts",
-          "guides/who-owns-facebook-ad-account-agency",
-          "guides/marketing-agency-6-month-contract-normal",
-          "guides/cheaper-alternatives-marketing-agency-roofing",
-          "guides/can-ai-replace-marketing-agency-hvac",
-          "guides/what-happens-to-leads-when-you-fire-agency",
-          "guides/agency-vs-freelancer-vs-ai-small-contractor",
-          "guides/how-much-should-contractor-spend-marketing",
-          "guides/is-500-a-month-enough-contractor-marketing",
-          "guides/why-cost-per-lead-went-up-after-hiring-agency",
-          "guides/marketing-agency-results-timeline",
-          "guides/gohighlevel-done-for-you",
-          "guides/who-can-run-gohighlevel-for-me",
-          "guides/gohighlevel-vs-marketing-agency",
-          "guides/podium-alternatives-contractors",
-          "guides/hatch-alternatives-home-services",
-          "guides/hubspot-too-expensive-contractor-alternatives",
-          "guides/jobber-vs-gohighlevel-marketing",
-          "guides/best-crm-automated-texting-contractors",
-          "guides/servicetitan-marketing-pro-alternatives",
-          "guides/best-ai-receptionist-texting-leads",
-          "guides/angi-leads-vs-running-own-ads",
-          "guides/homeadvisor-alternatives-generate-own-leads",
-          "guides/best-marketing-plumbing-company",
-          "guides/best-marketing-electrician",
-          "guides/best-way-get-landscaping-leads",
-          "guides/best-marketing-painting-contractor",
-          "guides/best-way-get-fence-installation-leads",
-          "guides/best-marketing-pool-service-company",
-          "guides/garage-floor-coating-leads",
-          "guides/best-marketing-pressure-washing",
-          "guides/how-to-market-concrete-company",
-          "guides/best-marketing-solar-installer",
-          "guides/best-marketing-deck-builder",
-          "guides/med-spa-marketing-small-budget",
-          "guides/rank-higher-google-maps-contractor",
-          "guides/get-more-google-reviews-service-business",
-          "guides/automated-review-requests-after-job",
-          "guides/google-business-profile-ranking-dropped",
-          "guides/how-many-google-reviews-beat-competitors",
-          "guides/responding-google-reviews-ranking",
-          "guides/google-business-profile-checklist-contractors",
-          "guides/can-ai-manage-google-business-profile",
-          "guides/handle-bad-google-review-contractor",
-          "guides/ai-marketing-cost-small-business",
-          "guides/what-does-300-a-month-marketing-get-you"
-        ]
-      },
-      {
-        "group": "Using Ares",
-        "pages": [
-          "using/dashboard",
-          "using/chat",
-          "using/approvals"
-        ]
-      },
-      {
-        "group": "Account",
-        "pages": [
-          "account/billing",
-          "account/security",
-          "account/faq",
-          "account/troubleshooting"
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Agencies & Alternatives",
+            "pages": [
+              "guides/agency-2k-month-no-leads",
+              "guides/agency-vs-freelancer-vs-ai-small-contractor",
+              "guides/angi-leads-vs-running-own-ads",
+              "guides/are-marketing-agencies-worth-it-contractors",
+              "guides/best-ai-receptionist-texting-leads",
+              "guides/best-crm-automated-texting-contractors",
+              "guides/best-marketing-agency-home-services",
+              "guides/best-marketing-agency-local-contractors",
+              "guides/can-ai-replace-marketing-agency-hvac",
+              "guides/cancel-marketing-agency-keep-ad-accounts",
+              "guides/cheaper-alternatives-marketing-agency-roofing",
+              "guides/gohighlevel-done-for-you",
+              "guides/gohighlevel-vs-marketing-agency",
+              "guides/hatch-alternatives-home-services",
+              "guides/homeadvisor-alternatives-generate-own-leads",
+              "guides/hubspot-too-expensive-contractor-alternatives",
+              "guides/is-a-marketing-agency-worth-it-small-business",
+              "guides/is-my-marketing-agency-ripping-me-off",
+              "guides/jobber-vs-gohighlevel-marketing",
+              "guides/marketing-agency-6-month-contract-normal",
+              "guides/marketing-agency-not-getting-leads-alternatives",
+              "guides/marketing-agency-results-timeline",
+              "guides/marketing-agency-vs-ai-marketing-tool",
+              "guides/podium-alternatives-contractors",
+              "guides/replace-marketing-agency-small-contractor",
+              "guides/servicetitan-marketing-pro-alternatives",
+              "guides/should-i-fire-my-agency-use-ai",
+              "guides/what-happens-to-leads-when-you-fire-agency",
+              "guides/what-should-a-marketing-agency-deliver-monthly",
+              "guides/who-can-run-gohighlevel-for-me",
+              "guides/why-marketing-agencies-fail-local-service",
+              "leads/leads-lost-after-business-hours",
+              "leads/marketo-alternatives-home-services"
+            ]
+          },
+          {
+            "group": "Lead Response & Follow-Up",
+            "pages": [
+              "guides/ai-lead-follow-up-local-contractors",
+              "leads/247-lead-answering-under-1200",
+              "leads/after-hours-lead-automation",
+              "leads/ai-texts-leads-books-estimates",
+              "leads/answer-leads-at-night-without-answering-service",
+              "leads/auto-reply-missed-calls-books-jobs",
+              "leads/automated-appointment-booking-service-business",
+              "leads/automatically-text-new-leads-instantly",
+              "leads/how-fast-respond-new-lead",
+              "leads/lead-follow-up-one-man-business",
+              "leads/lead-follow-up-sequence-contractors",
+              "leads/lead-follow-up-while-on-the-job",
+              "leads/lead-follow-up-without-office-staff",
+              "leads/missed-call-text-back-contractors",
+              "leads/percentage-leads-go-to-first-responder",
+              "leads/qualify-leads-automatically-before-calling",
+              "leads/revive-old-leads-never-booked",
+              "leads/speed-to-lead-statistics-home-services",
+              "leads/weekend-lead-response-hvac"
+            ]
+          },
+          {
+            "group": "Facebook & Meta Ads",
+            "pages": [
+              "ads/ai-manages-facebook-ads-small-business",
+              "ads/ai-vs-human-media-buyer",
+              "ads/facebook-ads-cost-roofing-company",
+              "ads/facebook-ads-daily-budget-contractors",
+              "ads/facebook-ads-not-working-hvac",
+              "ads/facebook-lead-forms-vs-landing-pages",
+              "ads/good-cost-per-lead-home-services",
+              "ads/how-often-change-facebook-ad-creative",
+              "ads/multi-location-franchise-marketing",
+              "ads/roofing-cross-account-reporting",
+              "ads/run-facebook-ads-yourself-or-hire",
+              "ads/stop-tire-kicker-leads-facebook",
+              "ads/why-facebook-leads-low-quality",
+              "guides/who-owns-facebook-ad-account-agency",
+              "guides/why-cost-per-lead-went-up-after-hiring-agency",
+              "leads/facebook-leads-not-answering-calls"
+            ]
+          },
+          {
+            "group": "Marketing by Trade",
+            "pages": [
+              "ads/facebook-ads-high-ticket-epoxy",
+              "guides/best-ai-marketing-hvac-roofing-medspa",
+              "guides/best-marketing-agency-epoxy-concrete",
+              "guides/best-marketing-deck-builder",
+              "guides/best-marketing-electrician",
+              "guides/best-marketing-painting-contractor",
+              "guides/best-marketing-plumbing-company",
+              "guides/best-marketing-pool-service-company",
+              "guides/best-marketing-pressure-washing",
+              "guides/best-marketing-solar-installer",
+              "guides/best-way-get-fence-installation-leads",
+              "guides/best-way-get-landscaping-leads",
+              "guides/garage-floor-coating-leads",
+              "guides/how-to-market-concrete-company",
+              "guides/med-spa-marketing-small-budget",
+              "leads/answering-service-vs-automated-text-plumber"
+            ]
+          },
+          {
+            "group": "Local SEO & Reviews",
+            "pages": [
+              "guides/automated-review-requests-after-job",
+              "guides/can-ai-manage-google-business-profile",
+              "guides/get-more-google-reviews-service-business",
+              "guides/google-business-profile-checklist-contractors",
+              "guides/google-business-profile-ranking-dropped",
+              "guides/handle-bad-google-review-contractor",
+              "guides/how-many-google-reviews-beat-competitors",
+              "guides/rank-higher-google-maps-contractor",
+              "guides/responding-google-reviews-ranking"
+            ]
+          },
+          {
+            "group": "Pricing & Budget",
+            "pages": [
+              "guides/ai-marketing-cost-small-business",
+              "guides/how-much-should-contractor-spend-marketing",
+              "guides/is-500-a-month-enough-contractor-marketing",
+              "guides/what-does-300-a-month-marketing-get-you"
+            ]
+          }
         ]
       }
     ]
@@ -202,7 +237,7 @@
     "socials": {}
   },
   "seo": {
-    "indexing": "navigable",
+    "indexing": "all",
     "metatags": {
       "og:site_name": "Ares Docs"
     },
