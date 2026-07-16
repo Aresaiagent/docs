@@ -18,7 +18,7 @@ Manual asks depend on a person remembering to do it, on a good day, with a custo
 
 ## When should you send the review request after a job is done?
 
-Timing is the single biggest lever. Send it too early and the customer hasn't had time to notice whether the work holds up. Send it too late and the job has faded from memory, or worse, they've already had a chance to get annoyed about something unrelated, like a billing question.
+Timing is the single biggest lever. Send it too early and the customer hasn't had time to notice whether the work holds up. Send it too late and the job has faded from memory.
 
 The trigger event matters as much as the delay. Tying the request to "job marked complete" in the field means it can fire before payment is settled, which sometimes creates friction if a billing question is outstanding. Tying it to "invoice paid" is cleaner in practice: the transaction is closed, and the ask reads as a satisfied-customer follow-up rather than something bundled with a payment reminder.
 
@@ -44,15 +44,15 @@ An email version, less time-pressured, can carry slightly more context:
 > Subject: How did we do?
 > Hi {{contact.first_name}}, we just wrapped up your job and wanted to check in. If you have a minute, a Google review helps other homeowners in your area find us. Here's the link: [link]. Thanks for your business.
 
-A few rules that hold across variations:
-- Use the customer's first name and reference the specific service if your CRM has that field populated, since a generic "thanks for your business" reads as a mass blast.
-- Keep the SMS version under 160 characters where possible so it doesn't split into two message segments.
-- Never quote a price, mention an invoice balance, or attach a payment link in the same message as the review ask. Mixing asks confuses the single action you want taken.
+A few rules hold across variations:
+- Use the customer's first name and the specific service if your CRM has that field populated; a generic "thanks for your business" reads as a mass blast.
+- Keep the SMS version under 160 characters so it doesn't split into two segments.
+- Never mention an invoice balance or attach a payment link in the same message as the review ask.
 - Test two or three variations rather than shipping one and assuming it's optimal.
 
 ## How many follow-ups should you send if there's no response?
 
-One. Maybe two, and only if the first went unanswered with no explicit decline. Sending a review request every few days starts to look and feel like spam, and it damages the relationship the review was supposed to reinforce in the first place.
+One, maybe two, and only if the first went unanswered with no explicit decline. Sending a request every few days looks like spam and damages the relationship the review was supposed to reinforce.
 
 A workable cadence:
 1. Initial request, tied to the job-complete or payment trigger.
@@ -66,11 +66,11 @@ As a hypothetical illustration: a two-truck plumbing company sends the first req
 The first SMS a contact receives from your business needs opt-out language, plainly. "Reply STOP to opt out" or equivalent, included in that first message, is standard practice under US SMS marketing compliance frameworks, and most CRMs and messaging platforms, including GoHighLevel, will flag or block sends that skip it. Once someone has opted in, follow-ups don't always need the full disclosure repeated, but a lightweight reminder costs nothing.
 
 A few practical guardrails:
-- Never send review requests to a number that hasn't previously interacted with your business through a job, quote, or booking. Cold outreach asking for a review is a different (and riskier) category entirely.
-- Respect quiet hours. Sending a review request at 7am or 9pm is a common source of complaints even when the underlying opt-out language is correct.
-- Honor STOP replies immediately and permanently. A contact who opts out should not reappear in a review campaign next quarter.
+- Only text numbers that have interacted with your business through a job, quote, or booking. Cold outreach asking for a review is a riskier category entirely.
+- Respect quiet hours; a review request at 7am or 9pm is a common source of complaints even with correct opt-out language.
+- Honor STOP replies immediately and permanently. A contact who opts out should not reappear in a campaign next quarter.
 
-This is general practice guidance, not legal advice. Compliance obligations vary by state and by how your CRM is configured, so confirm your specific setup with someone who knows your jurisdiction's requirements.
+This is general practice guidance, not legal advice. Confirm your specific obligations with someone who knows your jurisdiction's requirements.
 
 ## How does Ares automate this end to end?
 
@@ -78,7 +78,7 @@ Ares runs review requests as one part of its post-job automation inside GoHighLe
 
 Because Ares also runs lead follow-up and appointment booking (see <a href="/leads/follow-up">follow-up sequences</a> and <a href="/leads/booking">booking automation</a>) on the same GoHighLevel backbone, the review trigger sits on the same timeline as the rest of the customer's journey rather than as a separate bolted-on tool. Ares also monitors and responds to incoming reviews, a related but separate capability. Pricing for the platform, including this automation, is \$299 a month standard or \$100 per seat for enterprise.
 
-BrightLocal's consumer research consistently finds that most people check reviews before choosing a local service business, which is the entire reason the timing and wording of the request matter as much as they do. Getting the mechanics right doesn't guarantee a five-star review, but getting them wrong reliably guarantees no review at all.
+BrightLocal's consumer research consistently finds that most people check reviews before choosing a local service business, which is why the mechanics matter. Getting them right doesn't guarantee a five-star review, but getting them wrong reliably guarantees no review at all.
 
 ## Frequently asked questions
 
@@ -87,18 +87,18 @@ BrightLocal's consumer research consistently finds that most people check review
 Within a few hours of the job being marked complete or the invoice being paid works best for most home service jobs. Same-day, while the work is still fresh, beats waiting until the next day for most job types.
 </Accordion>
 <Accordion title="Do I need opt-out language in every review request text?">
-The first SMS to any contact needs clear opt-out language like "Reply STOP to opt out." Subsequent short follow-ups to an already-opted-in contact don't always require it repeated, but including it costs nothing and reduces risk.
+The first SMS to any contact needs clear opt-out language like "Reply STOP to opt out." Follow-ups to an already-opted-in contact don't always require it repeated, but including it costs nothing.
 </Accordion>
 <Accordion title="Should the review request come from a text, an email, or both?">
-SMS generally gets read faster and gets higher response rates for a quick ask like this. Email works as a lower-pressure alternative or a secondary channel if a contact doesn't have a mobile number on file.
+SMS generally gets read faster and gets higher response rates. Email works as a lower-pressure alternative if a contact doesn't have a mobile number on file.
 </Accordion>
 <Accordion title="What if a customer had a bad experience? Should the automation still send a review request?">
-No. Automated review requests should be gated behind a job or ticket status that reflects a completed, non-disputed job. If there's an open complaint, hold the review request and resolve the issue first.
+No. Requests should be gated behind a status that reflects a completed, non-disputed job. If there's an open complaint, hold the request and resolve the issue first.
 </Accordion>
 <Accordion title="Can I automate review requests without a full CRM system?">
-You can send them manually or through basic SMS tools, but triggering off job-complete or invoice-paid status, tracking opt-outs, and managing follow-up cadence at any real volume needs a CRM like GoHighLevel behind it, which is what a system like Ares runs on.
+You can send them manually or through basic SMS tools, but triggering off job status, tracking opt-outs, and managing follow-up cadence at real volume needs a CRM like GoHighLevel behind it.
 </Accordion>
 <Accordion title="Does asking for reviews too often hurt my business?">
-Yes. Sending more than one follow-up, or re-requesting from customers who already declined or opted out, reads as spam and can prompt complaints or opt-outs that hurt future messaging deliverability.
+Yes. More than one follow-up, or re-requesting from customers who already declined, reads as spam and can prompt opt-outs that hurt future messaging deliverability.
 </Accordion>
 </AccordionGroup>
